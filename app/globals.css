@@ -28,7 +28,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5.9% 90%;
+    --border: 240 5.9% 90%; /* Define custom border color */
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
 
@@ -60,7 +60,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
+    --border: 240 3.7% 15.9%; /* Dark mode custom border color */
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
   }
@@ -85,5 +85,9 @@
 
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+
+  .border-border {
+    border-color: var(--border); /* Custom border color */
   }
 }
