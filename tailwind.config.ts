@@ -1,21 +1,13 @@
-/* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
 
 import svgToDataUri from "mini-svg-data-uri";
-const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+// import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
-// Example usage of flattenColorPalette
-const colors = flattenColorPalette({ blue: ['#0000FF'] });
+const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette');
 
-module.exports = {
-  theme: {
-    extend: {
-      colors: colors,
-    },
-  },
-};
 
 
 const config = {
