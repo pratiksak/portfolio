@@ -4,7 +4,19 @@
 import type { Config } from "tailwindcss";
 
 import svgToDataUri from "mini-svg-data-uri";
-import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+
+// Example usage of flattenColorPalette
+const colors = flattenColorPalette({ blue: ['#0000FF'] });
+
+module.exports = {
+  theme: {
+    extend: {
+      colors: colors,
+    },
+  },
+};
+
 
 const config = {
   darkMode: ["class"],
